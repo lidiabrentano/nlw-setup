@@ -18,3 +18,4 @@ O Habits é um app para rastrear hábitos saudáveis.
 </br>
 No caso adaptei para os meus hábitos pessoais que seriam: Praticar exercícios, tomar água, dormir e acordar em horários pré-determinados, boa alimentação, estudar italiano e estudar programação. 
 
+- Visite o projeto online: https://lidiabrentano.github.io/nlw-setup/
