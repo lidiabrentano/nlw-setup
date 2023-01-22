@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #09090a;
+  color: white;
+  height: 100vh;
+  background-image: url(./assets/one-step-every-day2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 48px 10px;
+  background-color: #000000ec;
+
+  position: fixed;
+  width: 100%;
+  /* Para o header acompanhar a página, mesmo que vá para o lado ou para baixo*/
+
+  /*filhos: img-logo e button*/
+}
+button {
+  padding: 16px 24px;
+  border-radius: 8px; /*arredondamento nas laterais */
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /*filhos: img "+" e texto */
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #09090a;
+}
+#formHabits {
+  display: flex;
+  padding: 182px 48px 48px;
+  scroll-padding-top: 182px;
+  width: fit-content;
+
+  /*filhos: .days e .habits */
+}
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 60px;
+
+  /*filhos: .habit*/
+}
+.habit {
+  width: 40px;
+  height: 64px;
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+  /*filhos: .day */
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /*filhos: data e checkbox */
+}
+.day div {
+  /*data*/
+  margin-bottom: 8px; /*+ o gap de 24px em .day, fecha 32px!*/
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #e9e9f3;
+  text-align: center;
+}
+input {
+  /*checkbox*/
+  appearance: none;
+  -webkit-appearance: none; /*Para alguns navegadores compreenderem que não é para ter aparencia de input */
+
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  border: 2px solid #27272a;
+
+  background-color: #18181b;
+}
+input:checked {
+  /*checkbox*/
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
